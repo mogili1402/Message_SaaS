@@ -38,6 +38,7 @@ app.get('/', (req, res) => {
                     });
             <!-- If you are logged in, automatically get your name and email adress, your public profile information -->
             FB.login(function(response) {
+                console.log(response)
                       if (response.authResponse) {
                            console.log('Welcome!  Fetching your information.... ');
                            FB.api('/me', {fields: 'name, email'}, function(response) {
