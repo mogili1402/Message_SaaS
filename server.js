@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
         window.fbAsyncInit = function() {
             <!-- Initialize the SDK with your app and the Graph API version for your app -->
             FB.init({
-                      appId            : '1508557773332354',
+                      appId            : '228011803621505',
                       xfbml            : true,
                       version          : 'v18.0'
                     });
