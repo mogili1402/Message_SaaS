@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
 
 app.get('/', (req, res) => {
   res.send(`
@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
             FB.init({
                       appId            : '228011803621505',
                       xfbml            : true,
-                      version          : 'v18.0'
+                      version          : 'v17.0'
                     });
             <!-- If you are logged in, automatically get your name and email adress, your public profile information -->
             FB.login(function(response) {
