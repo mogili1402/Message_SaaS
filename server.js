@@ -1,9 +1,11 @@
 const express = require('express')
+const dir=__dirname
+console.log(dir)
 const app = express()
 const port = 3001
 
 app.get('/', (req, res) => {
-  res.sendFile("/home/sys2023/Documents/WhatsApp_SaaS/index.html")
+  res.sendFile(dir+"/index.html")
 })
 
 app.listen(port, () => {
