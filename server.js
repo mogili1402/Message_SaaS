@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/callback', (req, res) => {
-  cosole.log(req.body,req.params)
+  console.log(req.body,req.params)
  res.send("ok")
 })
 app.get('/privacy-policy', (req, res) => {
